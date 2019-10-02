@@ -25,7 +25,6 @@ const FAQ = () => {
           
           <div onClick={() => showq1(!q1)}><h3 className="text-lg text-lg uppercase text-primary flex items-center cursor-pointer"><span className="text-sm"><FaAngleDown /></span>How much can I borrow and for what specific uses?</h3></div>
           <Collapse isOpened={q1} springConfig={{stiffness: 150, damping: 30}}>
-          <p>The maximum amount you can borrow will depend on your program.{faq.costOfLiving && <span> You can finance your tuition and cost of living expenses.</span>}</p>
                <ul className="mb-0 pb-4">
                     {faq.loanRange.map(program => {
                          return <li>
